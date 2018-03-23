@@ -1,0 +1,52 @@
+/* .class, #anID */
+
+.inner-list {
+    padding-left: 20px;
+}
+
+.gallery-sec {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: black;
+}
+
+nav {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 16px;
+    font-stretch: expanded;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+}
+
+.paragraph {
+    width: 60%;
+}
+
+#body-styles {
+    margin-left: 3%;
+    background-color: black;
+    color: white;
+}
+
+.float-image {
+    float: left;
+    width: 33%;
+}
+
+footer {
+    font-family: Arial;
+    color: rgb(226, 43, 43);
+    font-size: 15px;
+}

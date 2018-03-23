@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="01style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="01Fundamentals.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1 id= "heading">Learning Javascript</h1>
+    <p>With Brad Traversy</p>
+</div>
+
+<div class="container">
+    <h1 id="time"></h1>
+    <!-- <button onclick="doClick()">Click Me!</button> -->
+    <!-- <button onclick="changeText()">Click Me!</button>
+    <button onmouseout="ClearDate()" onclick="ShowDate()">Show me the Date</button> -->
+</div>
+
+<script>
+function ClearDate(){
+    var heading = document.getElementById('heading');
+    time.innerHTML = '';
+}
+
+function changeText(){
+    var heading = document.getElementById('heading');
+    heading.innerHTML = 'You clicked';
+    // id.innerHTML = 'You clicked change text';
+}
+function ShowDate() {
+    var time = document.getElementById('time');
+    time.innerHTML = Date();
+}
+//if onClick = "doClick()" a message window pops up with the alert's message
+function doClick() {
+    alert('You Clicked!!');
+}
+    //object literal
+var person = {
+    firstName: 'Kevin',
+    lastName: 'Steele',
+    age:31,
+    children: ['noppy','bloopy'],
+    address:{
+        street: '374 E 159 st',
+        city: 'NYC',
+        state: 'NY'
+    },
+    fullName:function(){
+        return this.firstName
+    }
+}
+
+var apple = new Object();
+apple.color = 'red';
+apple.shape = 'round';
+
+apple.describe = function(){
+    return 'An apple is the color '+ this.color+' and the shape is '+this.shape;
+}
+
+//constructor pattern
+function Fruit (name, shape, color) {
+    this.name = name;
+    this.shape = shape;
+    this.color = color;
+
+    this.Describe = function () {
+        return 'A '+name+' is the color '+color+' and the shape is '+shape;
+    };
+} 
+//variable as array of initiated objects
+var users = [
+    {
+        name: 'John Doe',
+        age:30
+    },
+    {
+        name: 'Joan Do',
+        age:37
+    },
+    {
+        name: 'John Dan',
+        age:30
+    }
+]
+
+
+</script>
+</body>
+</html>
