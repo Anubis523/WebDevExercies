@@ -5,10 +5,10 @@ function isEven(x)
 
 function factorial (y){
     //higher complexity
-    // if(y===1 || y === 0)
-    // {
-    //     return 1;
-    // }
+    if(y===1 || y === 0)
+    {
+        return 1;
+    }
     // else
     // {
     //     return y * factorial(y-1);
